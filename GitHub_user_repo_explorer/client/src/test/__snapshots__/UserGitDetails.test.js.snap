@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders UserGitDetails component correctly 1`] = `null`;
+
+exports[`renders UserGitDetails component error state correctly 1`] = `null`;
+
+exports[`renders UserGitDetails component loading state correctly 1`] = `null`;

@@ -1,0 +1,304 @@
+/* Style for error messages. */
+.error-text {
+  color: #ff5252;
+  background: rgb(0, 0, 0);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 8px 0;
+  display: block;
+}
+
+/* Main Card component with dark red background and gold border. */
+.basic-card {
+  background: darkred;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px 0 rgba(44, 44, 44, 0.4);
+  border: 2px solid gold;
+}
+
+/* Button styling to match the theme. */
+.basic-button {
+  background: linear-gradient(to left, gold 60%, darkred 100%);
+  color: #212121;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 1.25rem;
+  border: 1.5px solid darkred;
+  transition: background 0.3s;
+}
+
+.basic-button:hover {
+  background: linear-gradient(to right, darkred 60%, gold 100%);
+  color: #fff;
+}
+
+/* Card header styling. */
+.basic-card-header {
+  color: gold;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 12px;
+  border-radius: 16px 16px 0 0;
+}
+
+/* Smaller header styling. */
+.basic-header {
+  background: rgba(155, 0, 0, 0.92);
+  color: gold;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 8px 10px;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.2rem;
+}
+
+/* Card body styling. */
+.basic-card-body {
+  background: rgba(33, 33, 33, 0.85);
+  color: #fff;
+  padding: 16px;
+  border-radius: 0 0 16px 16px;
+}
+
+/* Image styling for git hub avatar.. */
+.basic-image {
+  border-radius: 12px;
+  border: 3px solid gold;
+  box-shadow: 0 4px 16px 0 rgba(183, 28, 28, 0.5);
+  background: #212121;
+  padding: 4px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Link styling for github links. */
+.basic-link {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.basic-link:hover {
+  background: linear-gradient(90deg, darkred 60%, gold 100%);
+  color: white;
+}
+
+/* Styling for default links. */
+a {
+  color: rgb(255, 255, 255);
+  /* Iron man repulser color scheme. */
+  text-shadow: 0 0 8px #00eaff, 0 0 16px #00eaff, 0 0 24px #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+/* Paragraph styling. */
+p {
+  background: rgba(155, 0, 0, 0.92);
+  color:white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Segoe UI";
+  line-height: 1.6;
+  margin: 12px 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+/* Container for cards to center the cards. */
+.card-container {
+  max-width: 70%;
+  margin: 40px auto;
+  display: block;
+}
+
+/* List for GitHub users/repos. */
+.github-list {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  background: rgba(33, 33, 33, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px 0 rgba(44, 44, 44, 0.25);
+  border: 2px solid darkred;
+}
+
+.github-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  border-bottom: 1px solid gold44;
+  transition: background 0.2s;
+}
+
+/* Remove border from last list item */
+.github-list-item:last-child {
+  border-bottom: none;
+}
+
+/* Avatar image for github users. */
+.github-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid gold;
+  background: #212121;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+/* Details section in list: take remaining space */
+.github-list-details {
+  flex: 1;
+}
+
+/* Title styling for github list. */
+.github-list-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: gold;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+/* Meta info in list styling. */
+.github-list-meta {
+  font-size: 0.95rem;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+/* Description in list styling. */
+.github-list-desc {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.github-list-link {
+  color: darkred;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+
+.github-list-link:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* Commit list inside repos list. */
+.commit-list {
+  list-style: disc inside;
+  margin: 10px 0 0 32px;
+  padding: 0;
+  background: transparent;
+}
+
+.commit-list-item {
+  font-family: monospace, monospace;
+  font-size: 0.95rem;
+  color: #ffe082;
+  margin-bottom: 6px;
+  line-height: 1.3;
+  padding-left: 0;
+  border-left: 2px solid gold;
+  padding-left: 10px;
+}
+
+.commit-list-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Table styling for github user info. */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(33, 33, 33, 0.97);
+  border: 2px solid gold;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px 0 rgba(44, 44, 44, 0.25);
+  overflow: hidden;
+  margin: 24px 0;
+}
+
+table th,
+table td {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+table th {
+  background: darkred;
+  color: gold;
+  font-weight: bold;
+  font-size: 1.08rem;
+  border-bottom: 2px solid gold;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  background: rgba(33, 33, 33, 0.92);
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 1px solid gold;
+  transition: background 0.2s;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr:hover td {
+  background: rgba(61, 61, 61, 0.97);
+  color: gold;
+  cursor: pointer;
+}
+/* Input styling for search box. */
+input {
+  background: #212121;
+  color: #fff;
+  border: 2px solid gold;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+  box-shadow: 0 2px 8px 0 rgba(183, 28, 28, 0.15);
+}
+
+input:focus {
+  border-color: darkred;
+  box-shadow: 0 0 0 2px gold55;
+}
+
+/* Button styling to match the theme. */
+button {
+  background: linear-gradient(90deg, darkred 80%, gold 100%);
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 8px 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px 0 rgba(44, 44, 44, 0.25);
+}
+
+button:hover {
+  /* Invert gradient when hovered over. */
+  background: linear-gradient(90deg, gold 70%, darkred 100%);
+  color: darkred;
+  border-color: darkred;
+}
