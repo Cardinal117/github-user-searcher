@@ -3,6 +3,17 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+(async () => {
+  try {
+    const res = await axios.get("https://api.github.com/user", {
+      headers: { Authorization: `token ${process.env.GITHUB_TOKEN}` },
+    });
+    console.log("Authenticated as:", res.data.login);
+  } catch (e) {
+    console.error("Auth test failed:", e.response.status, e.response.data);
+  }
+})();
+
 const GITHUB_API = "https://api.github.com";
 
 // Authorization header with token from .env.

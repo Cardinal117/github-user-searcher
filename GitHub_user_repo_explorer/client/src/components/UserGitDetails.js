@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./gitStyles.css";
 
-export default function GitHubUser() {
+export default function UserGitDetails() {
   // Get username from parameters in url.
   const { username } = useParams();
   const [data, setData] = useState(null);
@@ -13,6 +13,8 @@ export default function GitHubUser() {
   // Runs as soon as username changes.
   useEffect(() => {
     if (!username) return;
+
+    console.log(`Fetching data for user: ${username}`);
 
     setLoading(true);
     setError(null);

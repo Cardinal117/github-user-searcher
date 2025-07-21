@@ -1,3 +1,7 @@
+body {
+  background-color: #2b2b2b;
+}
+
 /* Style for error messages. */
 .error-text {
   color: #ff5252;
@@ -102,7 +106,7 @@ a {
 /* Paragraph styling. */
 p {
   background: rgba(155, 0, 0, 0.92);
-  color:white;
+  color: white;
   font-weight: 500;
   font-size: 1.2rem;
   font-family: "Segoe UI";
