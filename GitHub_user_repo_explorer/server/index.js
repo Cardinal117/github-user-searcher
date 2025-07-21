@@ -4,7 +4,7 @@ import cors from "cors";
 import userDetailsRoute from "./userDetails.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = 8000;
 
 // Add security helmet, and cros origin(CORS) middleware. 
 app.use(helmet());
